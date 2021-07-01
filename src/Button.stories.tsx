@@ -13,4 +13,11 @@ const Template: Story<ButtonProps> = (args) =>
 export const Primary = Template.bind({});
 Primary.args = {
   label: 'Submit',
+  variant: 'primary',
+};
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  label: 'Submit',
+  variant: 'secondary',
 };

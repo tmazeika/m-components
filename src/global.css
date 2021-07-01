@@ -1,0 +1,9 @@
+:root {
+  --green-hsl: 166, 77%, 45%;
+  --blue-hsl: 197, 77%, 55%;
+}
+
+body {
+  background-color: #131c26;
+  font: 400 1em/1 'Source Sans Pro', sans-serif;
+}

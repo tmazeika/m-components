@@ -1,3 +1,24 @@
 .Button {
-  background-color: green;
+  --color: var(--green-hsl);
+
+  background-color: transparent;
+  border: 1px solid hsl(var(--color));
+  border-radius: 3px;
+  box-shadow: 0 0 3px hsla(var(--color), 0.5);
+  color: hsl(var(--color));
+  font-family: inherit;
+
+  padding: 0.3em 1em;
+}
+
+.Button:hover {
+  box-shadow: 0 0 6px hsla(var(--color), 0.75);
+}
+
+.Button:active {
+  background-color: hsla(var(--color), 0.05);
+}
+
+.Button.Secondary {
+  --color: var(--blue-hsl);
 }
