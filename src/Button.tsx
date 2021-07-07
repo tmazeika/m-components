@@ -3,8 +3,10 @@ import cn from 'classnames';
 import styles from './Button.module.css';
 
 export interface ButtonProps {
-  label: string;
   variant?: 'primary' | 'secondary';
+  disabled?: boolean;
+  onClick?: () => void;
+  children?: React.ReactNode;
 }
 
 export default function Button(props: ButtonProps): JSX.Element {
@@ -13,8 +15,10 @@ export default function Button(props: ButtonProps): JSX.Element {
       className={cn(styles.Button, {
         [styles.Secondary]: props.variant === 'secondary',
       })}
+      disabled={props.disabled}
+      onClick={() => props.onClick?.()}
     >
-      {props.label}
+      {props.children}
     </button>
   );
 }

@@ -12,12 +12,21 @@ const Template: Story<ButtonProps> = (args) =>
 
 export const Primary = Template.bind({});
 Primary.args = {
-  label: 'Submit',
   variant: 'primary',
+  disabled: false,
+  children: 'Submit',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  label: 'Submit',
   variant: 'secondary',
+  disabled: false,
+  children: 'Submit',
+};
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+  variant: 'primary',
+  disabled: true,
+  children: 'Submitting...',
 };

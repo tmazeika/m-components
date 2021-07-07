@@ -16,7 +16,14 @@
 }
 
 .Button:active {
-  background-color: hsla(var(--color), 0.05);
+  background-color: hsla(var(--color), 0.1);
+}
+
+.Button:disabled {
+  background-color: hsla(var(--gray-1-hsl), 0.1);
+  border-color: hsl(var(--gray-1-hsl));
+  box-shadow: none;
+  color: var(--gray-3)
 }
 
 .Button.Secondary {

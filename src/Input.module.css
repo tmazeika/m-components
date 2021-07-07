@@ -1,0 +1,39 @@
+.Input {
+  --color: var(--blue-hsl);
+
+  background-color: transparent;
+  border: 1px solid hsl(var(--gray-1-hsl));
+  border-radius: 3px;
+  box-shadow: 0 0 3px hsla(var(--gray-1-hsl), 0.5);
+  color: #fff;
+  font-family: inherit;
+
+  padding: 0.3em 0.6em;
+  width: 15em;
+}
+
+.Input[type='password']:not([value='']) {
+  letter-spacing: 3px;
+}
+
+.Input::placeholder {
+  color: hsl(var(--gray-1-hsl));
+  opacity: 1;
+}
+
+.Input:hover {
+  border-color: hsl(var(--gray-2-hsl));
+}
+
+.Input:focus {
+  background-color: hsla(var(--color), 0.05);
+  border-color: hsl(var(--color));
+  outline: none;
+}
+
+.Input:disabled {
+  background-color: hsla(var(--gray-1-hsl), 0.1);
+  border-color: hsl(var(--gray-1-hsl));
+  box-shadow: none;
+  color: var(--gray-3);
+}

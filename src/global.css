@@ -1,6 +1,10 @@
 :root {
-  --green-hsl: 166, 77%, 45%;
   --blue-hsl: 197, 77%, 55%;
+  --gray-1-hsl: 0, 0%, 45%;
+  --gray-2-hsl: 0, 0%, 52%;
+  --gray-3: #999;
+  --gray-3-hsl: 0, 0%, 60%;
+  --green-hsl: 166, 77%, 45%;
 }
 
 body {
