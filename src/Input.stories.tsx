@@ -1,5 +1,5 @@
+import { Meta, Story } from '@storybook/react';
 import React, { useState } from 'react';
-import { Story, Meta } from '@storybook/react';
 import Input, { InputProps } from './Input';
 
 export default {
@@ -24,6 +24,7 @@ const Template: Story<InputProps> = (args) => {
 export const Text = Template.bind({});
 Text.args = {
   type: 'text',
+  label: 'Your Text',
   value: 'Hello, world!',
   disabled: false,
 };
@@ -31,8 +32,8 @@ Text.args = {
 export const Password = Template.bind({});
 Password.args = {
   type: 'password',
+  label: 'Password',
   value: 'Hello, world!',
-  placeholder: 'Password',
   disabled: false,
 };
 
@@ -47,6 +48,7 @@ Placeholder.args = {
 export const Disabled = Template.bind({});
 Disabled.args = {
   type: 'text',
+  label: 'Your Text',
   value: 'Hello, world!',
   disabled: true,
 };

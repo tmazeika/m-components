@@ -1,7 +1,7 @@
 import '../src/global.css';
 
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
+  actions: { argTypesRegex: '^on[A-Z].*' },
   backgrounds: {
     default: 'dark',
     values: [
@@ -17,4 +17,4 @@ export const parameters = {
       date: /Date$/,
     },
   },
-}
+};

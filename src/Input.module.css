@@ -1,3 +1,15 @@
+.Container {
+  max-width: 17em;
+}
+
+.Label {
+  color: var(--gray-3);
+  font-size: 0.8em;
+
+  display: block;
+  padding: 0 0 0.3rem 0.2rem;
+}
+
 .Input {
   --color: var(--blue-hsl);
 
@@ -6,10 +18,10 @@
   border-radius: 3px;
   box-shadow: 0 0 3px hsla(var(--gray-1-hsl), 0.5);
   color: #fff;
-  font-family: inherit;
+  font: inherit;
 
   padding: 0.3em 0.6em;
-  width: 15em;
+  width: 100%;
 }
 
 .Input[type='password']:not([value='']) {
